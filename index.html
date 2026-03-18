@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Season Life-Flow Mat | Modular Pet Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">LIFE-FLOW MAT</div>
+        <div class="nav-actions">
+            <a href="#wishlist" class="nav-icon-btn" onclick="openModal('wishlistModal')" title="Add to Wishlist">❤️</a>
+            <a href="#cart" class="nav-btn" onclick="openModal('outOfStockModal')">🛒 Add to Cart</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hook">Is your dog’s mat working as hard as you do? 🇨🇦🐾</span>
+                <h1 class="headline">Built for the Wild.<br>Refined for the Home.</h1>
+                <p class="sub-headline">One sustainable shell. Infinite sensory inserts. The last pet mat you’ll ever
+                    need to buy.</p>
+                <div class="cta-group">
+                    <a href="#cart" class="btn btn-primary" onclick="openModal('outOfStockModal')">Add to Cart</a>
+                    <a href="#wishlist" class="btn btn-secondary" onclick="openModal('wishlistModal')">❤️ Wishlist</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="glow"></div>
+                <img src="assets/hero.png"
+                    alt="Happy golden retriever resting on the sleek Life-Flow Mat in a modern Canadian condo"
+                    class="hero-img">
+            </div>
+        </section>
+
+        <!-- Body / Philosophy Section -->
+        <section class="philosophy">
+            <div class="philosophy-text reveal-on-scroll">
+                <h2>Designed for the Canadian Life-Flow. 🔄</h2>
+                <p>In a land of -30°C winters and 30°C summers, one-size-fits-all just doesn't cut it. Meet the
+                    All-Season Life-Flow Mat.</p>
+                <ul class="scenario-list">
+                    <li><span class="icon">🔥</span> Too hot by the heater? <strong>Slide in the Arctic Chill.</strong>
+                    </li>
+                    <li><span class="icon">🌲</span> Heading to Algonquin for the weekend? <strong>Snap on the Outbound
+                            Guard.</strong></li>
+                    <li><span class="icon">💼</span> Miss you while you're at the office? <strong>The Soul-Bond insert
+                            keeps your scent close.</strong></li>
+                </ul>
+                <p class="highlight-text">It’s more than a mat—it’s a modular wellness system. Stop replacing. Start
+                    evolving.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="section-header reveal-on-scroll">
+                <h2>Engineered for Perfection</h2>
+                <p>Advanced tech meets zero-waste sustainability.</p>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">❄️</div>
+                    <h3>Adaptive Climate Control</h3>
+                    <p>From "Furnace-Face" to "Summer-Sizzle," our interchangeable cores (Arctic Chill & Herbal
+                        Recovery) regulate your pet's micro-climate regardless of the crazy Canadian weather.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card reveal-on-scroll" style="transition-delay: 100ms;">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Fur-Magnet & Odor-Shield Tech</h3>
+                    <p>Engineered for tight condo spaces. Our proprietary shell captures dander on contact, while the
+                        silver-ion inserts neutralize that "wet dog" smell before it hits your sofa.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card reveal-on-scroll" style="transition-delay: 200ms;">
+                    <div class="feature-icon">♻️</div>
+                    <h3>Zero-Waste Wellness</h3>
+                    <p>Don't toss the mat when their needs change. Swap the functional core to support senior joints or
+                        puppy anxiety, reducing landfill waste and your long-term pet care costs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Showcase Section -->
+        <section class="showcase">
+            <div class="showcase-content reveal-on-scroll">
+                <h2>Interchangeable Cores</h2>
+                <p>Swap out the inner core in seconds. Pictured: Herbal Recovery Core & Arctic Chill Core.</p>
+            </div>
+            <div class="showcase-image-wrapper reveal-on-scroll">
+                <img src="assets/inserts.png" alt="Close up of the modular pet mat inserts" class="showcase-img">
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="preorder" class="cta-section reveal-on-scroll">
+            <h2>Ready to Evolve?</h2>
+            <p>Join the waitlist and get first access to our limited initial launch.</p>
+            <form class="waitlist-form" onsubmit="event.preventDefault(); alert('Thanks for joining the waitlist!');">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Join Waitlist</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="hashtags">
+            #CanadianPetParent #ModularLiving #DogWellness #CondoLifeCanada #SustainabilityMatters
+        </div>
+        <div class="copyright">
+            &copy; 2026 Life-Flow Mat. Created for Canadian Pets.
+        </div>
+    </footer>
+
+    <!-- Out of Stock Modal -->
+    <div id="outOfStockModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('outOfStockModal')">&times;</span>
+            <div class="modal-icon">📦</div>
+            <h2>Due to overwhelming demand, we are currently Sold Out.</h2>
+            <p>Our initial batch of Life-Flow Mats sold out faster than expected. We are working hard with our
+                sustainable manufacturing partners to restock.</p>
+            <p><strong>Want to secure yours?</strong> Join the priority notification list and get 15% off when we
+                restock.</p>
+            <form class="waitlist-form modal-form"
+                onsubmit="event.preventDefault(); alert('You are on the priority list!'); closeModal('outOfStockModal');">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Notify Me</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlistModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('wishlistModal')">&times;</span>
+            <div class="modal-icon">❤️</div>
+            <h2>Save for Later</h2>
+            <p>Create a free account or sign in to save this item to your permanent wishlist and receive updates on
+                availability.</p>
+            <form class="waitlist-form modal-form"
+                onsubmit="event.preventDefault(); alert('Saved to Wishlist!'); closeModal('wishlistModal');">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit" class="btn btn-secondary">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
