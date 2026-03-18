@@ -568,3 +568,51 @@ footer {
     margin-bottom: 1rem;
     width: 100%;
 }
+
+/* Shop Section & Product Cards */
+.shop-section {
+    padding: 8rem 5%;
+    background: var(--surface-light);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 1.5rem 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.product-actions {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.product-actions .btn {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+}
+
+.product-actions .btn-primary {
+    flex: 1;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
