@@ -1,21 +1,21 @@
 :root {
-    --bg-light: #FAF8F5;
-    /* Warm cream/off-white */
+    --bg-light: #F3F4F6;
+    /* Cloud */
     --surface: #FFFFFF;
-    --surface-light: #F0EBE1;
-    /* Warm beige */
-    --text-primary: #2C3539;
-    /* Soft charcoal for readability */
-    --text-secondary: #6B7280;
-    /* Neutral gray-brown */
-    --accent-blue: #7FB3D5;
-    /* Still keep the icy blue for the cooling core */
-    --accent-green: #6B8E6B;
-    /* Warmer, earthy green */
-    --accent-gold: #D4A373;
-    /* Warm, inviting tan/gold */
-    --border-color: rgba(44, 53, 57, 0.08);
-    /* Darker border for light theme */
+    --surface-light: #E5E7EB;
+    /* Slightly darker gray */
+    --text-primary: #111827;
+    /* Carbon black */
+    --text-secondary: #4B5563;
+    /* Neutral gray */
+    --accent-blue: #0047FF;
+    /* Electric Blue */
+    --accent-green: #D4FF00;
+    /* Neon Lime */
+    --accent-gold: #FFD600;
+    /* Cyber Yellow */
+    --border-color: rgba(17, 24, 39, 0.08);
+    /* Carbon with opacity */
 }
 
 * {
@@ -54,7 +54,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(250, 248, 245, 0.85);
+    background: rgba(243, 244, 246, 0.85);
     /* Light blurred nav */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -125,16 +125,16 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
-    background: rgba(216, 160, 94, 0.1);
+    background: rgba(255, 214, 0, 0.1);
     padding: 0.4rem 1rem;
     border-radius: 20px;
-    border: 1px solid rgba(216, 160, 94, 0.2);
+    border: 1px solid rgba(255, 214, 0, 0.2);
 }
 
 .headline {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #2C3539 0%, #6B7280 100%);
+    background: linear-gradient(135deg, #111827 0%, #4B5563 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -169,7 +169,7 @@ a {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(212, 163, 115, 0.3);
+    box-shadow: 0 10px 20px rgba(255, 214, 0, 0.3);
 }
 
 .btn-secondary {
@@ -179,7 +179,7 @@ a {
 }
 
 .btn-secondary:hover {
-    background: rgba(44, 53, 57, 0.05);
+    background: rgba(17, 24, 39, 0.05);
     /* Darker hover effect for light text */
     border-color: var(--text-primary);
 }
@@ -486,6 +486,7 @@ footer {
         flex-direction: column;
     }
 }
+
 /* Modal Styles */
 .modal-overlay {
     display: none;
@@ -494,7 +495,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(44, 53, 57, 0.6);
+    background: rgba(17, 24, 39, 0.6);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     z-index: 2000;
